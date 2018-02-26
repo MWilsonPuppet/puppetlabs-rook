@@ -4,12 +4,11 @@ metadata:
   name: rook
   namespace: rook
 spec:
-  versionTag: alpha
-  dataDirHostPath: /var/lib/rook 
+  dataDirHostPath: /var/lib/rook
   storage:
     useAllNodes: true
     useAllDevices: false
     storeConfig:
-      storeType: filestore
+      storeType: bluestore
       databaseSizeMB: 1024
       journalSizeMB: 1024
